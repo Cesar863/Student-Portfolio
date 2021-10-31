@@ -124,8 +124,25 @@ header nav ul li a:hover {
 
 /* start about me and photos */
 .container {
-    display:flex;
+    position: relative;
+    text-align: center;
+    color: var(--primary-color);
+    border:5px solid var(--quaternary-color);
 }
+
+.bottom-left {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    background-color: var(--quaternary-color)
+}
+
+/*.bottom-left p {
+    position:absolute;
+    bottom:16px;
+    left: 16px;
+    background-color: var(--quaternary-color);
+} */
 
 .abouts {
     width: 100%;
@@ -161,13 +178,86 @@ header nav ul li a:hover {
     background-color: var(--quinary-color);
 }
 
-.work {
+.main-work {
     margin: 20px;
     background-color: var(--quinary-color);
     color: var(--primary-color);
     flex: 1;
 }
 
-.link-main{
+.main-work img {
+    max-height:auto;
+    max-width:100%;
+    filter:brightness(50%);
+}
 
+.main-work img:hover{
+    filter:brightness(100%);
+}
+
+.work {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+
+}
+.work img {
+    max-height: auto;
+    max-width: 50%;
+}
+
+.link-main{
+    border: 20px solid black;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+/* contact me */
+.contact {
+    padding: 20px 35px;
+    background-color:var(--quinary-color);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.contact h2{
+    font-size: 40px;
+    color: var(--primary-color);
+    padding-top: 20px;
+    padding: bottom 20px;
+    text-align:center;
+    margin:0 auto 20px auto;
+    width:37%;
+    border-right: 3px solid var(--primary-color);
+}
+
+.contact a {
+    text-decoration:none;
+    color:var(--primary-color);
+}
+
+.contact nav {
+    margin:7px 0;
+}
+
+.contact nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contact nav ul li a {
+    padding: 10px;
+    font-size:1.55vw;
+}
+
+.contact nav ul li a:hover{
+    background: var(--primary-color);
+    color:var(--secondary-color);
+    border-radius:15px;
+    text-shadow: none;
 }
