@@ -27,6 +27,7 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index: 9999;
 }
 
 header h1{
@@ -66,4 +67,45 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     border-radius: 20px;
     text-shadow: none;
+}
+/* end of header */
+
+/* hero section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.hero-cta {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 1.5vw;
+    color: var(--primary-color);
+}
+
+
+/* start about me and photos */
+.about {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about h2 {
+    color:black;
+    text-align: left;
+    width: 20%;
+    display: flex;
+    border: 1px, black;
+}
+
+.about img {
+    width: 400px;
+    height: auto;
 }
