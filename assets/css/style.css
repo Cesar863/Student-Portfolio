@@ -16,6 +16,34 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*utilities */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.section-title {
+    font-size: 30px;
+    color: var(--primary-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 40%;
+    border-right: 3px solid var(--primary-color);
+}
+
+.primary-border {
+    border-color: var(--quaternary-color);
+}
+
 /* header */
 
 header {
@@ -73,6 +101,7 @@ header nav ul li a:hover {
 /* hero section */
 .hero {
     position: relative;
+    background-color: var(--quinary-color);
 }
 
 .hero img {
@@ -90,22 +119,55 @@ header nav ul li a:hover {
 }
 
 
+/* end hero section */
+
+
 /* start about me and photos */
-.about {
-    width:100%;
-    display: flex;
+.container {
+    display:flex;
+}
+
+.abouts {
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--quinary-color);
 }
 
-.about h2 {
-    color:black;
-    text-align: left;
-    width: 20%;
-    display: flex;
-    border: 1px, black;
+.about{
+    margin: 20px;
+    background-color: var(--quinary-color);
+    color: var(--primary-color);
+    flex: 1;
 }
 
-.about img {
-    width: 400px;
-    height: auto;
+.about p {
+    font-size:15px;
+    flex-grow:2;
+}
+
+/* end of about me */
+
+/*Begining of work */
+
+.works {
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--quinary-color);
+}
+
+.work {
+    margin: 20px;
+    background-color: var(--quinary-color);
+    color: var(--primary-color);
+    flex: 1;
+}
+
+.link-main{
+
 }
