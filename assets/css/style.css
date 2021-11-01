@@ -410,31 +410,48 @@ header nav ul li a:hover {
         padding: 30px 15px;
     }
 
-    .step h3 {
+    .about h3 {
         flex: 1 100%;
         text-align: center;
     }
 
-    .step-info {
+    .step-title .about-content {
         flex: 2 100%;
         text-align: center;
         justify-content: center;
     }
 
-    .step-img {
+    .work img {
         flex: 0 32%;
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
     }
 
-    .step-text {
+    .work-title {
         flex: 100%;
     }
 
-    .trainer-bio h3,
-    .trainer-bio h4 {
+    .work h3,
+    .work h4 {
         display: block;
+    }
+
+    .first-row
+    .second-row1
+    .second-row2
+    .second-row
+    .third-row
+    .third-row1
+    .third-row2
+    .frbl
+    .rbl
+    .work
+    .work-content
+    .work-title{
+        flex:100%;
+        width:auto;
+        height:auto;
     }
 }
 
@@ -447,23 +464,40 @@ header nav ul li a:hover {
         width: 95%;
     }
 
-    .intro p {
+    .header p {
         width: 100%;
     }
 
-    .trainer {
+    .about {
         flex: 0 100%;
     }
 
-    .contact-info {
+    .contact {
         text-align: center;
     }
 
-    .contact-info > * {
+    .contact > * {
         flex: 0 100%;
     }
 
     .contact-form {
         order: 3;
+    }
+
+    .first-row
+    .second-row1
+    .second-row2
+    .second-row
+    .third-row
+    .third-row1
+    .third-row2
+    .frbl
+    .rbl
+    .work
+    .work-content
+    .work-title{
+        flex:100%;
+        width:auto;
+        height:auto;
     }
 }
